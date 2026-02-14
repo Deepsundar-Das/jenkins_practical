@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Deepsundar-Das/maven_practical_14_feb-2026.git'
+                git 'https://github.com/Deepsundar-Das/jenkins_practical.git' 
             }
         }
         stage('Build') {

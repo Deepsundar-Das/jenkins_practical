@@ -1,6 +1,6 @@
 node {
     stage('Clone Repository') {
-        git 'https://github.com/Deepsundar-Das/maven_practical_14_feb-2026.git'
+        git 'https://github.com/Deepsundar-Das/jenkins_practical.git'
     }
     stage('Build') {
         sh 'echo "Building scripted pipeline..." > build_output.txt'
