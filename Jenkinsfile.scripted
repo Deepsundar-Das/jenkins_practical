@@ -1,0 +1,14 @@
+node {
+    stage('Clone Repository') {
+        git 'https://github.com/Deepsundar-Das/maven_practical_14_feb-2026.git'
+    }
+    stage('Build') {
+        sh 'echo "Building scripted pipeline..." > build_output.txt'
+    }
+    stage('Echo Build Status') {
+        echo "Build Stage Completed Successfully!"
+    }
+    stage('Archive Artifacts') {
+        archiveArtifacts artifacts: 'build_output.txt'
+    }
+}
